@@ -1,358 +1,376 @@
-/*generales*/
-block {
-  display: block;
-}
+/*
+Tipografía: Montserrat
+Botones, hover: #FF00BF
+Fondo de footer: #333447
+Título del formulario: #352384
+Texto del formulario: #728099
+Gradiente morado: linear-gradient(#76278F, #2B1E66);
+*/
 
 body {
-  margin: 0 auto;
-  text-align: center;
+  margin: 0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
-}
-/*menú*/
-
-header {
-     opacity: 1;
-     height: 115px;
-     margin-bottom: -125px;
-     position: fixed;
  }
 
- header img {
-     float: left;
-     margin: 35px 0px 35px 75px;
-     z-index: 1;
- }
-
- .log {
-     float: right;
-     padding-left: 580px;
-     padding-top: 42px;
- }
-
- .log a {
-     text-decoration: none;
-     color: white;
-     margin: 25px;
-     z-index: 1;
-     font-size: 18px;
- }
-
- .log a:hover {
-     color: #FF00BF;
- }
-
- .log-in:hover {
-     border: none;
- }
- /*div formulario */
-
- .log-in {
-     border: 1px solid white;
-     padding: 11px 22px 11px 22px;
-     border-radius: 10px;
- }
-
- .drive {
-     right: 200px;
- }
-
- /*formulario container */
-
- .type-form {
-     margin-top: 115px;
-     padding-left: 50px;
-     padding-top: 0px;
-     height: 420px;
-     width: 485px;
-     background: white;
-     color: #37277F;
-     text-align: left;
-     clear: both;
-     float: right;
- }
-
- .miles {
-     font-size: 40px;
-     font-weight: 700;
-     margin-bottom: 10px;
- }
-
- .sign-up {
-     font-size: 16px;
-     font-weight: 300;
-     margin-top: 0px;
- }
- /*Campos del formulario */
-
- input[type="text"] {
-     width: 430px;
-     border: none;
-     height: 40px;
-     font-size: 18px;
-     color: gray;
-     padding-top: 5px;
-     border-bottom: 1px solid #37277F;
-     margin-bottom: 40px;
- }
-
- .become {
-     background: #FF00BF;
-     color: white;
-     text-decoration: none;
-     height: 50px;
-     width: 184;
-     border-radius: 10px;
-     padding: 14px 20px 14px 20px;
-     margin: 20px 15px 20px 0px;
- }
-
- .become:hover {
-     background: rgb(129, 3, 98);
- }
-
- .sign-button {
-     color: #718097;
-     padding-top: 20px;
-     margin: 20px 0px 20px 10px;
- }
-
- .sign-button:hover {
-     color: #FF00BF;
- }
-
- .check {
-     margin-top: 40px;
- }
-
- .check,
- .earn {
-     font-size: 12px;
-     color: #718097;
- }
-
- .check a,
- .earn a {
-     text-decoration: none;
-     color: #718097;
- }
-
- .check a:hover,
- .earn a:hover {
-     color: #FF00BF;
- }
-
-/*taxi imagen*/
-.taxi-container {
-  height: 534px;
-  background-image: url("../assets/images/hero.gif");
-  background-size: 100% 100%;
-}
-/*fondo*/
-.purple {
-  height: 640px;
-  background: linear-gradient(#76278F, #2B1E66);
-}
-/*teléfono y texto*/
-.purple {
-     height: 640px;
-     background: linear-gradient(#6B1E7E, #2B1E66);
- }
-
- .phone {
-     float: right;
-     margin-right: 145px;
-     margin-top: 62px;
-     clear: both;
- }
-
- .purple-container {
-     padding-top: 58px;
-     padding-left: 150px;
- }
-
- .purple-header {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 90%;
-    margin-top: 10px;
-    margin-bottom: 5px;
+/* Nav bar */
+nav {
+  position: absolute;
 }
 
-.purple p {
-    line-height: 140%;
-    text-align: left;
-    color: white;
-}
-/*videos*/
-.first-video-container {
-  background: #fff;
-  height: 464px;
+nav > .lyft-logo > img { /* Logo */
+  width: 67px;
+  height: 48px;
+  margin-left: 86px;
+  margin-top: 34px;
 }
 
-.title {
-    font-size: 16px;
-    margin-bottom: -18px;
-    font-weight: 500;
-    line-height: 21px;
+nav > .menu {
+  margin-top: 20px;
+  margin-left: 606px;
 }
 
-.subtitle {
-    padding-top: 0px;
-    font-weight: 700;
-    padding-bottom: 6px;
-    font-size: 28px;
-    line-height: 31px;
+nav > .menu > p {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  margin-left: 35px;
 }
 
-.description {
-    font-size: 16px;
-    padding-bottom: 3px;
-    font-weight: 300;
-    line-height: 24px;
-    font-style: normal;
-    color: #333447;
+nav > .menu > .log-in { /* Estilo para botón "Log in" */
+  display: inline-block;
+  width: 97px;
+  height: 46px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 35px;
 }
 
-.text-1 {
-    float: left;
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 30px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+nav > .menu > .log-in > p {
+  color: white;
+  font-size: 18px;
+  margin-top: 12px;
 }
 
-#first-video {
+/* Turn miles section */
+.turn-miles > img {
+  width: 1366px;
+  height: 542px;
+}
+
+.turn-miles > .space {
+  position: relative;
+  background-color: white;
+  width: 560px;
+  height: 424px;
+  margin-right: -86px;
+  margin-top: -428px;
+}
+
+.turn-miles > .space > .container {
+  width: 432px;
+  height: 313px;
+  margin-left: 64px;
+  margin-top: 68px;
+}
+
+.turn-miles > .space > .container > .title { /* Estilo para p */
+  color: #352384;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+
+.turn-miles > .space > .container > .title > p { /* Quitando margen default de p */
+  margin: 0px;
+}
+
+.turn-miles > .space > .container > p { /* Estilo para "Sign up..." */
+  color: #352384;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.turn-miles > .space > .container > .phone-number {
+  margin-top: 33px;
+}
+
+.turn-miles > .space > .container > .phone-number > p { /* Estilo para "Phone number" */
+  color: #c3c3c3;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: -4px;
+}
+
+.turn-miles > .space > .container > .phone-number > hr { /* Estilo de línea */
+  border: 0.5px solid #352384;
+  width: 90%;
+  margin-left: 0px;
+}
+
+.turn-miles > .space > .container > .buttons {
+  margin-top: 35px;
+}
+
+.turn-miles > .space > .container > .buttons > .become-a-driver { /* Estilo botón "Become..."*/
+  display: inline-block;
+  width: 167px;
+  height: 50px;
+  background-color: #ff00bf;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.turn-miles > .space > .container > .buttons > .sign-up {
+  display: inline-block;
+  text-align: center;
+  margin-left: 0px;
+  color: #728099;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+.turn-miles > .space > .container > .already-applied {
+  margin-top: 23px;
+}
+
+.turn-miles > .space > .container > .already-applied > p {
+  color: #728099;
+  font-size: 10px;
+  margin: 0px;
+}
+
+/* Presentation section */
+.presentation {
+  background: linear-gradient(-180deg, #691b84, #2b1e66); /* Degradado para background */
+  width: 1366px;
+  height: 642px;
+  margin-top: -428px;
+}
+
+.presentation > .space {
+  width: 471px;
+  height: 434px;
+  margin-top: 104px;
+  margin-left: 160px;
+  color: white;
+}
+
+.presentation > .space > .container:first-child {
+  margin-top: 15px;
+}
+
+.presentation > .space > .container {
+  margin-bottom: 97px;
+}
+
+.presentation > .space > .container > h2 {
+  margin-top: 15px;
+}
+
+.presentation > .space > .container > h2:last-of-type {
+  margin-top: -20px;
+}
+
+.presentation > .space > .container > p {
+  margin-top: -16px;
+  line-height: 1.5;
+}
+
+.presentation > .float-right > img {
+  width: 476px;
+  height: 498px;
+  margin-top: 81px;
+  margin-right: 169px;
+}
+
+/* Video 1 section */
+.amplify-your-ride {
+  width: 1366px;
+  height: 506px;
+}
+
+.amplify-your-ride > .space {
+  background-color: white;
+  width: 454px;
+  height: 506px;
+}
+
+.amplify-your-ride > .space > .container {
+  width: 323px;
+  height: 159px;
+  margin-left: 56px;
+  margin-top: 30px;
+  color: black;
+}
+
+.amplify-your-ride > .space > .container > h2 {
+  margin-top: -20px;
+}
+
+.amplify-your-ride > .space > .container > p {
+  font-size: 15.5px;
+}
+
+/* Video 2 section */
+.june {
+  width: 1366px;
+  height: 506px;
+}
+
+.june > .space {
+  background-color: white;
+  width: 454px;
+  height: 506px;
+}
+
+.june > .space > .container {
+  width: 323px;
+  height: 159px;
+  margin-left: 56px;
+  margin-top: 30px;
+  color: black;
+}
+
+.june > .space > .container > h2 {
+  margin-top: -20px;
+}
+
+.june > .space > .container > p {
+  font-size: 15.5px;
+}
+
+/* Video 3 section */
+.good-thing {
+  width: 1366px;
+  height: 506px;
+}
+
+.good-thing > .space {
+  background-color: white;
+  width: 454px;
+  height: 506px;
+}
+
+.good-thing > .space > .container {
+  width: 323px;
+  height: 159px;
+  margin-left: 56px;
+  margin-top: 30px;
+  color: black;
+}
+
+.good-thing > .space > .container > h2 {
+  margin-top: -20px;
+}
+
+.good-thing > .space > .container > p {
+  font-size: 15.5px;
+}
+
+/* Footer section */
+.footer {
+  background-color: #333447;
+  width: 1366px;
+  height: 568px;
+  color: white;
+}
+
+.footer > .info { /* Estilo para info "LOG IN / PARTNER / LEARN" */
+  width: 1366px;
+  height: 337px;
+}
+
+.footer > .info > .info-container {
+  display: inline-block;
+  width: 803px;
+  height: 212px;
+  margin-left: 137px;
+  margin-top: 64px;
+}
+
+.footer > .info > .info-container > .rectangle {
+  display: inline-block;
+  width: 161px;
+  height: 212px;
+  margin-right: 103px;
+
+}
+
+.footer > .info > .info-container > .rectangle > span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.footer > .info > .info-container > .rectangle > span:hover { /* Hover de span */
+  color: #b31586;
+}
+
+.footer > .info > .info-container > .rectangle > p:hover { /* Hover de p */
+  color: #b31586;
+}
+
+.footer > .info > .logos {
+  display: inline-block;
+  width: 131px;
+  height: 212px;
+  margin-top: 64px;
+}
+
+.footer > .info > .logos > img {
+  width: 131px;
+  height: 40px;
+  margin-bottom: 28px;
+}
+
+.footer > .social-media { /* Estilo para íconos de social media */
+  width: 1366px;
+  height: 86px;
+}
+
+.footer > .social-media > .iconos {
+  display: inline-block;
+  width: 306px;
+  height: 34px;
+  margin-left: 564px;
+  margin-top: 31px;
+}
+
+.footer > .social-media > .iconos > img {
+  width: 34px;
+  height: 34px;
+  margin-right: 65px;
+}
+
+hr {
+  border: 1px solid white;
+  width: 50%;
+}
+
+.footer > .terms { /* Estilo para terms */
+  width: 1366px;
+  height: 117px;
+}
+
+.footer > .terms > p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding-top: 41px;
+}
+
+/* Clases reutilizables */
+.float-left {
+  float: left
+}
+
+.float-right {
   float: right;
 }
 
-.second-video-container {
-  background: #fff;
-  height: 464px;
+.clear {
+  clear: both;
 }
-
-.text-2 {
-    float: right;
-    text-align: left;
-    margin-top: 30px;
-    margin-right: 80px;
-}
-
-#second-video {
-  float: left;
-}
-
-.third-video-container {
-    background: white;
-    height: 464px;
-}
-
-.text-3 {
-    float: left;
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 30px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-#third-video {
-    float: right;
-}
-/*footer*/
-footer {
-     height: 497px;
-     background: #333546;
-     position: relative;
-     clear: both;
- }
-
- .logo-container {
-     width: 170px;
-     float: right;
-     margin-right: 250px;
-     margin-top: 82px;
- }
-
- .text-container-left,
- .text-container-middle,
- .text-container-right {
-     float: left;
-     color: #fff;
-     margin-top: 55px;
-     margin-right: 128px;
-     text-align: left;
- }
-
- .text-container-left {
-     margin-left: 120px;
- }
-
- .text-container-left p,
- .text-container-middle p,
- .text-container-right p {
-     margin-top: 30px;
- }
-
- footer img {
-     margin-bottom: 40px;
- }
-
- footer .icon-container {
-     position: absolute;
- }
-
- footer i {
-     color: white;
-     position: absolute;
-     top: 360px;
-     font-size: 21px;
-     border: 1px solid white;
-     border-radius: 50px;
-     margin: 0 auto;
-     height: 22px;
-     width: 28px;
-     margin: 20px;
-     padding-top: 6px;
- }
-
- footer .fa-twitter {
-     left: 530px;
- }
-
- footer .fa-facebook {
-     left: 600px;
- }
-
- footer .fa-instagram {
-     left: 670px;
- }
-
- footer hr {
-     position: absolute;
-     top: 420px;
-     border: .3px solid white;
-     width: 626px;
-     left: 310px;
- }
-
- footer span {
-     color: white;
-     position: absolute;
-     top: 445px;
-     font-size: 15px;
-     left: 510px;
- }
-
- footer a {
-     text-decoration: none;
-     color: white;
-     margin-left: 10px;
- }
-
- footer a:hover {
-     color: #FF00BF;
-     text-decoration: underline;
- }
